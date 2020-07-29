@@ -11,7 +11,7 @@ import Foundation
 import Combine
 import UIKit
 
-class KeyboardHandler:NSObject, ObservableObject, UIGestureRecognizerDelegate {
+public class KeyboardHandler:NSObject, ObservableObject, UIGestureRecognizerDelegate {
     
     @Published public var keyboardHeight:CGFloat = 0.0
   
