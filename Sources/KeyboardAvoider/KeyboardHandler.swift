@@ -23,7 +23,7 @@ public class KeyboardHandler:NSObject, ObservableObject, UIGestureRecognizerDele
     var panRecognizer:UIPanGestureRecognizer?
     var subscriptions = Set<AnyCancellable>()
     
-    override init() {
+    public override init() {
         super.init()
         panRecognizer = UIPanGestureRecognizer(
             target: self, action: #selector(handlePan(_:)))
